@@ -1252,10 +1252,6 @@ footer > hr{
         padding: 5rem 30px;
     }
 
-    main #pricing .container h1{
-        text-align: center;
-    }
-
     footer{
         padding: 2rem 30px 1rem 30px;
     }
@@ -1303,11 +1299,12 @@ footer > hr{
 
     main #pricing .container .content a{
         font-size: 14px;
+        padding: 10px 15px;
         
     }
 
     main #pricing .container .content a span{
-        font-size: 22px;
+        font-size: 25px;
     }
 }
 
@@ -1339,9 +1336,15 @@ footer > hr{
         font-size: 13px;
     }
 
+    main #home .wrapper .links{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        /* background-color: red; */
+    }
+
     main #home .wrapper .links a{
-        padding: 8px 20px;
-        font-size: 10px;
+        width: 100%;
+        padding: 1rem 0;
     }
 
     main .fluid #about-us .container .left .wrapper h1{
@@ -1359,6 +1362,10 @@ footer > hr{
         font-size: 12px;
     }
 
+    main .fluid #about-us .container .right img{
+        border-radius: 1rem;
+    }
+
     main #services .text p{
         font-size: 18px;
     }
@@ -1372,7 +1379,7 @@ footer > hr{
     }
 
     main #services .wrapper .designs h1{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     main #services .wrapper .designs p{
@@ -1438,8 +1445,9 @@ footer > hr{
     }
 
     main #pricing .pricing-area .pricing-items{
-        width: 250px;
-        padding: 1.5rem;
+        width: 100%;
+        padding: 4rem 1.5rem;
+        text-align: center;
     }
 
     main #pricing .pricing-area .pricing-items h1{
@@ -1456,10 +1464,48 @@ footer > hr{
     
     main #pricing .pricing-area .pricing-items a{
         font-size: 14px;
+        margin-top: 3rem;
+        border: 2px solid var(--dark-black);
+    }
+
+    main #pricing .pricing-area .pricing-items:nth-child(2) .items-check p{
+        font-size: 13px;
+    }
+
+    main #pricing .pricing-area .pricing-items:nth-child(2) a{
+        margin-top: 4.2rem;
+        border: 2px solid var(--blue);
+    }
+
+    main #pricing .pricing-area .pricing-items .items-check{
+        /* background-color: red; */
+        width: fit-content;
+        text-align: start;
+        margin: auto;
     }
 
     main #pricing .pricing-area .pricing-items .items-check p{
-        font-size: 12px;
+        font-size: 13px;
+        margin: 1.5rem 0;
+    }
+
+    main #pricing .container .content{
+        /* background-color: red; */
+    }
+
+    main #pricing .container .content a{
+        font-size: 13px;
+        padding: 5px 0;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--white);
+    }
+
+    main #pricing .container .content a span{
+        font-size: 25px;
     }
 
     footer .wrapper .left img{
@@ -1506,6 +1552,27 @@ footer > hr{
     }
 }
 
+@media screen and (max-width: 350px){
+    main #home .wrapper h1{
+        font-size: 25px;
+    }
+
+    main #home .wrapper p{
+        font-size: 12px;
+        padding: 0;
+    }
+
+    main #home .wrapper .links a{
+        width: 90%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    main #home .wrapper .links a:last-child{
+        border: 2px solid var(--grey);
+    }
+}
+
 @media screen and (max-height: 1194px){
     main #home .wrapper{
         margin-top: 30rem;
@@ -1521,5 +1588,16 @@ footer > hr{
 @media screen and (max-height: 800px){
     main #home .wrapper{
         margin-top: 15em;
+    }
+}
+
+@media screen and (max-height: 600px){
+    main #home{
+        height: 120vh;
+    }
+
+    main #home .wrapper{
+        margin-top: 11rem;
+        padding-bottom: 5rem;
     }
 }
